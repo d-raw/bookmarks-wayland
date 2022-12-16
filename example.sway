@@ -1,0 +1,22 @@
+# bookmarking
+# insert mode
+mode "insert" {
+    # save bookmarks to other file
+    bindsym b exec "~/.local/bin/bookmark -ao"; mode "default" 
+    # save bookmarks to main file
+    bindsym Shift+b exec "~/.local/bin/bookmark -a"; mode "default" 
+    # add bookmark manually
+    bindsym m exec "~/.local/bin/bookmark -am"; mode "default"
+    # search and open bookmark from other file
+    bindsym Shift+o exec "~/.local/bin/bookmark -so"; mode "default"
+    # search and open bookmark
+    bindsym o exec "~/.local/bin/bookmark -s"; mode "default" 
+    # search tags and open bookmarks
+    bindsym t exec "~/.local/bin/bookmark -st"; mode "default"
+    # open the bookmark files to edit them manually
+    bindsym e exec "alacritty -e nvim ~/docs/txts/bookmarks*"; mode "default"
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+i mode "insert"
