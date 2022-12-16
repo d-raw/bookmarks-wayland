@@ -11,7 +11,7 @@ Edit the "bookmark" file and change the location where bookmarks are saved accor
 Copy the file to somewhere in your PATH.
 
 ## Usage
-You can run it directly from the command line or bind the various commands to various keys in your window manager. Example bindings for [Swaywm](https://swaywm.org/) are given in the file `example.sway`.
+You can run it directly from the command line but it would be most useful when you bind the various commands to various keys in your window manager. Example bindings for [Swaywm](https://swaywm.org/) are given in the file `example.sway`.
 
 ```
 Usage:
@@ -25,3 +25,7 @@ Options:
 -st	Search tags from both files and open the bookmark
 -am	Add bookmarks by manually typing it instead of copying from clipboard
 ```
+
+## Using with X11
+- replace `bemenu` with `dmenu`
+- replace `wtype` with `xdotool type`
