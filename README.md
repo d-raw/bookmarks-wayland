@@ -27,5 +27,6 @@ Options:
 ```
 
 ## Using with X11
-- replace `bemenu` with `dmenu`
 - replace `wtype` with `xdotool type`
+- replace `wl-paste` with `xclip -selection clipboard -o`
+- disable focus following mouse to always type to last focused window in i3: `focus_follows_mouse no`
